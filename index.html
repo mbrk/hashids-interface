@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Hashid Generator</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="hashid.css">
+</head>
+<body>
+	<form>
+		<h1>Encode</h1>
+		<div id="encode">
+			<label for="salt-input">Salt: </label><input type="text" name="salt" id="salt-input" value=""/><br>
+			<label for="value-input">Value: </label><input type="text" name="value" id="value-input" value=""/><br>
+			<input type="checkbox" name="defaultsalt" id="default-salt-checkbox"/><label for="default-salt-checkbox">use default salt for encoding</label><br>
+			<input type="checkbox" name="usetimestamp" id="timestamp-checkbox" checked/><label for="timestamp-checkbox">use timestamp</label><br>
+			<!--label for="hash-length">Hash length: </label>
+			<select name="hashlength" id="hash-length">
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8" selected>8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<br-->
+			<input type="button" value="encode" id="encode-button"><br>
+		</div>
+		<div id="encode-result">encode result
+		</div>
+		<h1>Decode</h1>
+		<div id="decode">
+			<label for="decode-salt-input">Salt: </label><input type="text" name="decodesalt" id="decode-salt-input" value=""/><br>
+			<label for="hashid-input">HashId: </label><input type="text" name="hashid" id="hashid-input"/><br>
+			<input type="checkbox" name="decodedefaultsalt" id="decode-default-salt-checkbox"/><label for="decode-default-salt-checkbox">use default salt for decoding</label><br>
+			<input type="button" value="decode" id="decode-button"><br>
+		</div>
+		<div id="decode-result">decode result
+		</div>
+	</form>
+	<script src="bower_components/hashids/lib/hashids.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

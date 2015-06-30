@@ -1,0 +1,24 @@
+{
+  "name": "hashids",
+  "version": "0.0.1",
+  "authors": [
+    "Malte Burkhardt <info@bitsundpixel.de>"
+  ],
+  "description": "simple html interface to create hashids",
+  "main": "index.html",
+  "keywords": [
+    "hashids",
+    "tool"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hashids": "~1.0.2"
+  }
+}

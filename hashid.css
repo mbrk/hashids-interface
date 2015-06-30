@@ -1,0 +1,35 @@
+body{
+	font-family: sans-serif;
+	padding: 20px;
+}
+input[type=text]{
+	min-width: 200px;
+}
+input{
+	font-size: 1.5em;
+	margin: 0.2em;
+}
+
+label{
+	font-size: 1.5em;
+}
+
+#encode-result{
+	background-color: lightyellow;
+}
+#decode-result{
+	background-color: lightyellow;
+}
+
+div{
+	padding: 20px;
+}
+h1{
+	margin: 0.5em 0 0 0;
+	font-size: 2em;
+}
+
+#encode-result>#id,
+#decode-result>#id{
+	font-weight: bold;
+}
